@@ -1,0 +1,79 @@
+body{
+    background-color: aliceblue;
+}
+h1,h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+p{
+    text-align: center;
+    font-size: 24px;
+}
+.copyElement{
+    width: 80%;
+    margin: auto;
+}
+.codecopy{
+    background-color: #eeeeee;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color:red;
+    font-family: monospace;
+    margin: 10px;
+}
+.copybox{
+    position: absolute;
+}
+.btncopy{
+    display: inline-block;
+    position: absolute;
+    padding: 4px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    top: 9px;
+    outline: none;
+    left: 73vw;
+}
+.btncopy:hover{
+    background-color: #007bff;
+    color: white;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    font-size: 23px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    outline: none;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+.btn-primary{
+    color:white;
+    background-color: rgb(141, 13, 141);
+}
+.btn-text-primary{
+    color:#007bff;
+    border:1px solid #007bff;
+}
+.btn-secondary{
+    color:#6c757d;
+    border:2px solid #6c757d;
+}
+.btn-secondary:hover{
+    color: white;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+@media only screen and (max-width: 688px) {
+    .btncopy {
+        left: 7vw;
+    }
+    .codecopy{
+        overflow: scroll;
+    }
+}

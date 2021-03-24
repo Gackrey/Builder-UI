@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    word-wrap: break-word;
+}
+body{
+    background-color: antiquewhite;
+}
+.burgerbox{
+    position: relative;
+    display: none;
+    left: 84vw;
+    top: 9px;
+    background-color: transparent;
+    height: 30px;
+    width: 40px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: 0.7s;
+}
+.burgerbox .burgerlines{
+    background-color: black;
+    height: 5px;
+    width: 38px;
+    margin: 4px 0px;
+    transition: 0.5s;
+}
+.logo{
+    width: 46px;
+    margin: 10px 70px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.content-section{
+    position: sticky;
+    max-height: 650px;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    left: 0;
+}
+.contents{
+    margin: 6px 10px;
+    list-style: none;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h1,h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+.contents:hover{
+    background-color: rgb(228, 84, 228);
+}
+.contents > a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color:black;
+    padding: 5px 38px;
+}
+.documentation{
+    font-size: 18px;
+    font-family: system-ui;
+}
+.codecopy{
+    background-color: #f8f8f8;
+    padding: 20px 10px;
+    border-radius: 10px;
+    color:red;
+    font-family: monospace;
+    margin: 10px;
+}
+.copybox{
+    position: absolute;
+}
+.btncopy{
+    display: inline-block;
+    position: absolute;
+    padding: 4px;
+    border-radius: 8px;
+    top: 9px;
+    outline: none;
+    left: 73vw;
+}
+.btncopy:hover{
+    background-color: #007bff;
+    color: white;
+}
+.flex-show{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 688px) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+    }
+    .content-section{
+        position: fixed;
+        background-color: #1e1c1c;
+        color: white;
+        z-index: 2;
+        width: 72vw;
+        left: -72vw;
+    }
+    .image-circle-small {
+        width: 100px;
+        height: 100px;
+    }
+    .image-circle-medium {
+        width: 200px;
+        height: 200px;
+    }
+    .image-circle-large {
+        width: 250px;
+        height: 250px;
+    }
+    .documentation {
+        margin-left: 20px;
+        width: 100vw;
+    }
+    .btncopy {
+        left: 7vw;
+    }
+    .contents > a {
+        color: white;
+        padding: 5px 21px;
+        font-size: 22px;
+    }
+    .burgerbox{
+        display: inline-block;
+    }
+    .codecopy{
+        overflow: scroll;
+    }
+    .toggle{
+        left: 0;
+    }
+    .rotatef{
+        transform: rotate(45deg) translateY(6px);
+    }
+    .rotatel{
+        transform: rotate(-45deg) translateY(-5px);
+    }
+    .remove{
+        display: none;
+    }
+    .grid-3{
+        display: none;
+    }
+}

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="component.css">
+    <link rel="stylesheet" href="documentation.css">
+    <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Documentation</title>
+</head>
+
+<body>
+
+    <!-- Hamburger -->
+
+    <div class="burgerbox">
+        <div class="burgerlines firstcross"></div>
+        <div class="burgerlines middledash"></div>
+        <div class="burgerlines lastcross"></div>
+    </div>
+    <div class="container">
+        <section class="content-section">
+            <h1>Contents</h1>
+            <ul>
+                <li class="contents"><a href="#avatar">Avatar</a></li>
+                <li class="contents"><a href="#alert">Alert</a></li>
+                <li class="contents"><a href="#badge">Badge</a></li>
+                <li class="contents"><a href="#buttons">Buttons</a></li>
+                <li class="contents"><a href="#cards">Cards</a></li>
+                <li class="contents"><a href="#image">Image</a></li>
+                <li class="contents"><a href="#list">Lists</a></li>
+                <li class="contents"><a href="#input">Input</a></li>
+                <li class="contents"><a href="#modal">Modal</a></li>
+                <li class="contents"><a href="#nav">Navigation</a></li>
+                <li class="contents"><a href="#rating">Rating</a></li>
+                <li class="contents"><a href="#textutil">Text Utilities</a></li>
+                <li class="contents"><a href="#grid">Simplified grid</a></li>
+                <li class="contents"><a href="#toast">Toast/Snackbar</a></li>
+            </ul>
+        </section>
+        <section class="documentation">
+
+            <!-- Avatar Component -->
+
+            <div id="avatar">
+                <h1>Avatar</h1>
+                <p>An avatar is a graphical representation of a user's character with a circle and border. It is usually
+                    seen in all social media platforms which helps users to uniquely identify someone with their avatar
+                </p>
+                <div class="flex-show">
+                    <img class="avatar-small" src="https://gackrey.netlify.app/img/my_pic.jpg" alt="">
+                    <img class="avatar-large" src="https://gackrey.netlify.app/img/my_pic.jpg" alt="">
+                    <div>
+                        <img class="avatar-small" src="https://gackrey.netlify.app/img/my_pic.jpg" alt="">
+                        <span class="avatar-badge-active"></span>
+                    </div>
+                    <div>
+                        <img class="avatar-small" src="https://gackrey.netlify.app/img/my_pic.jpg" alt="">
+                        <span class="avatar-badge-time">3m</span>
+                    </div>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;img class=&quot;avatar-small&quot; src=&quot;...&quot;alt=&quot;&quot;&gt;</pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;img class=&quot;avatar-large&quot; src=&quot;...&quot;alt=&quot;&quot;&gt;</pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;div&gt;
+                        &lt;img class="avatar-small" src="..." alt="">
+                        &lt;span class="avatar-badge-active">&lt;/span>
+                    &lt;/div></pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;div&gt;
+                        &lt;img class="avatar-small" src="..." alt="">
+                        &lt;span class="avatar-badge-time">3m&lt;/span>
+                    &lt;/div></pre>
+                </div>
+            </div>
+
+            <!-- Alert Component -->
+
+            <div id="alert">
+                <h1>Alert</h1>
+                <p>An alert displays a short important message in a way that attracts the user's attention without
+                    interrupting the user's tasks. </p>
+                <div class="alert alert-primary">
+                    This is a alert primary text.
+                </div>
+                <div class="alert alert-success">
+                    This is a alert success text.
+                </div>
+                <div class="alert alert-danger">
+                    This is a alert danger text.
+                </div>
+                <div class="alert alert-warning">
+                    This is a alert warning text.
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                        &lt;div class=&quot;alert alert-primary&quot;&gt;
+                            This is a alert primary text.
+                        &lt;/div&gt;</pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                        &lt;div class=&quot;alert alert-success&quot;&gt;
+                            This is a alert success text.
+                        &lt;/div&gt;</pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                        &lt;div class=&quot;alert alert-danger&quot;&gt;
+                            This is a alert danger text.
+                        &lt;/div&gt;</pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                        &lt;div class=&quot;alert alert-warning&quot;&gt;
+                            This is a alert warning text.
+                        &lt;/div&gt;</pre>
+                </div>
+
+                <h3>Dismissible Alert</h3>
+                <p>An dismissible alert is an alert which can be closed by clicking the "X" button. The samples are:
+                </p>
+                <div class="alert alert-dismiss alert-primary">
+                    This is a dismissible alert primary text.
+                    <button class="dismiss dismiss-primary">X</button>
+                </div>
+                <div class="alert alert-dismiss alert-success">
+                    This is a dismissible alert success text.
+                    <button class="dismiss dismiss-success">X</button>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;div class=&quot;alert alert-primary&quot;&gt;
+                        This is a dismissible alert primary text.
+                        &lt;button class="dismiss dismiss-primary">X&lt;/button>
+                    &lt;/div&gt;</pre>
+                </div>
+            </div>
+
+            <!-- Badge Component -->
+
+            <div id="badge">
+                <h1>Badge</h1>
+                <p>Badges generate a small badge to top-right or bottom-right of its child element.It is seen in chat
+                    application to show the count of notification or active status of the user</p><br>
+                <div class="flex-show">
+                    <div class="badge">
+                        <img class="icon" src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="">
+                        <span class="count">6</span>
+                    </div>
+                    <div class="badge">
+                        <img class="icon" src="https://img.icons8.com/ios/452/facebook-new.png" alt="">
+                        <span class="count">6</span>
+                    </div>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                        &lt;div class=&quot;badge&quot;&gt;
+                            &lt;img class=&quot;icon&quot; src=&quot;https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png&quot; alt=&quot;&quot;&gt; 
+                            &lt;span class=&quot;count&quot;&gt;6&lt;/span&gt;
+                        &lt;/div&gt;</pre>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                        &lt;div class=&quot;badge&quot;&gt;
+
+                        &lt;!--  Paste any icon link in src or you can use font awesome -->
+
+                            &lt;img class=&quot;icon&quot; src=&quot;https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png&quot; alt=&quot;&quot;&gt;
+                            &lt;span class=&quot;count&quot;&gt;6&lt;/span&gt;
+                        &lt;/div&gt;</pre>
+                </div>
+            </div>
+
+            <!-- Button Component -->
+
+            <div id="buttons">
+                <h1>Buttons</h1>
+                <p>Buttons allow users to take actions and make choices with a single tap.Buttons are present in
+                    almost every component of a UI. The designes we provide are</p>
+                <h3>Filled Buttons</h3>
+                <div class="flex-show">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-link">Link</button>
+                    <button class="btn btn-info">Info</button>
+                </div>
+                <button class="btn-float">+</button>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;button class="btn btn-primary">Primary&lt;/button>
+                    &lt;button class="btn btn-secondary">Secondary&lt;/button>
+                    &lt;button class="btn btn-success">Success&lt;/button>
+                    &lt;button class="btn btn-danger">Danger&lt;/button>
+                    &lt;button class="btn btn-warning">Warning&lt;/button>
+                    &lt;button class="btn btn-link">Link&lt;/button>
+                    &lt;button class="btn btn-info">Info&lt;/button>
+                    &lt;button class="btn-float">+&lt;/button></pre>
+                </div>
+                <h3>Outline buttons</h3>
+                <div class="flex-show">
+                    <button class="btn btn-text-primary">Primary</button>
+                    <button class="btn btn-text-secondary">Secondary</button>
+                    <button class="btn btn-text-success">Success</button>
+                    <button class="btn btn-text-danger">Danger</button>
+                    <button class="btn btn-text-warning">Warning</button>
+                    <button class="btn btn-text-dark">Dark</button>
+                    <button class="btn btn-text-info">Info</button>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;button class="btn btn-text-primary">Primary&lt;/button>
+                    &lt;button class="btn btn-text-secondary">Secondary&lt;/button>
+                    &lt;button class="btn btn-text-success">Success&lt;/button>
+                    &lt;button class="btn btn-text-danger">Danger&lt;/button>
+                    &lt;button class="btn btn-text-warning">Warning&lt;/button>
+                    &lt;button class="btn btn-text-dark">Dark&lt;/button>
+                    &lt;button class="btn btn-text-info">Info&lt;/button></pre>
+                </div>
+                <h3>Badge buttons</h3>
+                <div class="flex-show">
+                    <button class="btn btn-primary">Primary <span class="secondary-badge">5</span></button>
+                    <button class="btn btn-text-primary">Secondary <span class="primary-badge">5</span></button>
+                </div>
+                <div class="copyElement">
+                    <div class="copybox">
+                        <button class="btncopy btn-text-primary">copy</button>
+                    </div>
+                    <pre class="codecopy">
+                    &lt;button class="btn btn-primary">Primary &lt;span class="secondary-badge">5&lt;/span>&lt;/button>
+                    &lt;button class="btn btn-text-primary">Secondary &lt;span class="primary-badge">5&lt;/span>&lt;/button></pre>
+                </div>
+
+                <!-- Card Component -->
+
+                <div id="cards">
+                    <h1>Cards</h1>
+                    <p>A card is a flexible and rxtensible content container. It consists of a heading, an image and a
+                        description describing the image</p>
+                    <h3>Text Only Card</h3>
+                    <div class="card-textOnly">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+                        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                        reprehenderi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ea deleniti cum,
+                        debitis fugiat
+                        <button class="readmore">Read More</button>
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &ltdiv class="card-textOnly">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+                        quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                        reprehenderi 
+                        &ltbutton class="readmore">Read More&lt/button>
+                    &lt/div></pre>
+                    </div>
+                    <h3>Horizontal Card</h3>
+                    <div class="card">
+                        <img class="card-image" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                        <span class="card-overlay">Card Title</span>
+                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+                            quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                            reprehenderi</p>
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &ltdiv class="card">
+                        &ltimg class="card-image" src="..." alt="">
+                        &ltspan class="card-overlay">Card Title&lt/span>
+                        &ltp class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+                            quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                            reprehenderi
+                        &lt/p>
+                    &lt/div></pre>
+                    </div>
+                    <h3>Dismissible Card</h3>
+                    <div class="card">
+                        <div class="check">
+                            <button class="dismiss-card">X</button>
+                        </div>
+                        <img class="card-image" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                        <span class="card-overlay">Card Title</span>
+                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+                            quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                            reprehenderi</p>
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &ltdiv class="card">
+                        &lt;div class="check">
+                            &ltbutton class="dismiss-card">X&lt/button>
+                        &lt/div>
+                        &ltimg class="card-image" src="..." alt="">
+                        &ltspan class="card-overlay">Card Title&lt/span>
+                        &ltp class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non
+                            quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                            reprehenderi
+                        &lt/p>
+                    &lt/div></pre>
+                    </div>
+                </div>
+
+                <!-- Image Component -->
+
+                <div id="image">
+                    <h1>Images</h1>
+                    <h3>Circular Image</h3>
+                    <div class="flex-show">
+                        <img class="image-circle-small" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                        <img class="image-circle-medium" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                        <img class="image-circle-large" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &lt;img class="image-circle-small" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                    &lt;img class="image-circle-medium" src="https://materializecss.com/images/sample-1.jpg" alt="">
+                    &lt;img class="image-circle-large" src="https://materializecss.com/images/sample-1.jpg" alt=""></pre>
+                    </div>
+                    <h3>Responsive Image</h3>
+                    <img class="image-responsive"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu-cgt82Lk3akU6tDJGF-GSx3WCVU1lCtYhA&usqp=CAU"
+                        alt="">
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &lt;img class="image-responsive" src="https://materializecss.com/images/sample-1.jpg" alt=""></pre>
+                    </div>
+                </div>
+
+                <!-- List Component -->
+
+                <div id="list">
+                    <h1>Lists</h1>
+                    <ul class="list" style="margin: auto;">
+                        <li class="list-items top-item">Apple is a fruit which is very tasty.</li>
+                        <li class="list-items">Mango is a fruit which is very tasty.</li>
+                        <li class="list-items">Pear is a fruit which is very tasty.</li>
+                        <li class="list-items">Guava is a fruit which is very tasty.</li>
+                        <li class="list-items bottom-item">Orange is a fruit which is very tasty.</li>
+                    </ul>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &lt;ul class="list">
+                        &lt;li class="list-items top-item"> Apple is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items"> Mango is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items"> Pear is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items"> Guava is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items bottom-item"> Orange is a fruit which is very tasty. &lt;/li>
+                    &lt;/ul></pre>
+                    </div>
+                    <h3>List with active elements</h3>
+                    <ul class="list" style="margin: auto;">
+                        <li class="list-items top-item active"> Apple is a fruit which is very tasty. </li>
+                        <li class="list-items"> Mango is a fruit which is very tasty. </li>
+                        <li class="list-items active"> Pear is a fruit which is very tasty. </li>
+                        <li class="list-items"> Guava is a fruit which is very tasty. </li>
+                        <li class="list-items no-border"> Orange is a fruit which is very tasty .</li>
+                    </ul>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &lt;ul class="list">
+                        &lt;li class="list-items top-item active"> Apple is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items"> Mango is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items active"> Pear is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items"> Guava is a fruit which is very tasty. &lt;/li>
+                        &lt;li class="list-items bottom-item"> Orange is a fruit which is very tasty .&lt;/li>
+                    &lt;/ul></pre>
+                    </div>
+                    <h3>Notification List</h3>
+                    <ul class="list" style="margin: auto;">
+                        <li class="notification-item top-item"><img class="avatar-small"
+                                src="https://gackrey.netlify.app/img/my_pic.jpg" alt=""> Gourav added you as a friend
+                        </li>
+                        <li class="notification-item"><img class="avatar-small"
+                                src="https://gackrey.netlify.app/img/my_pic.jpg" alt=""> Gourav liked your photo </li>
+                        <li class="notification-item"><img class="avatar-small"
+                                src="https://gackrey.netlify.app/img/my_pic.jpg" alt=""> Gourav commented your photo
+                        </li>
+                        <li class="notification-item"><img class="avatar-small"
+                                src="https://gackrey.netlify.app/img/my_pic.jpg" alt=""> Gourav tagged you in a photo"
+                        </li>
+                        <li class="notification-item no-border"><img class="avatar-small"
+                                src="https://gackrey.netlify.app/img/my_pic.jpg" alt=""> Gourav sent you a message.</li>
+                    </ul>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &lt;ul class="list">
+                        &lt;li class="notification-item top-item">
+                            &lt;img class="avatar-small" src="..." alt=""> Gourav added you as a friend 
+                        &lt;/li>
+                        
+                        &lt;li class="notification-item">
+                            &lt;img class="avatar-small" src="..." alt=""> Gourav liked your photo 
+                        &lt;/li>
+
+                        &lt;li class="notification-item">
+                            &lt;img class="avatar-small" src="..." alt=""> Gourav commented your photo 
+                        &lt;/li>
+
+                        &lt;li class="notification-item">
+                            &lt;img class="avatar-small" src="..." alt=""> Gourav tagged you in a photo
+                        &lt;/li>
+
+                        &lt;li class="notification-item no-border">
+                            &lt;img class="avatar-small" src="..." alt=""> Gourav sent you a message.
+                        &lt;/li>
+                    &lt;/ul></pre>
+                    </div>
+                </div>
+
+                <!-- Input Component -->
+
+                <div id="input">
+                    <h1>Input</h1>
+                    <div class="flex-show">
+                        <div class="inputbox">
+                            <input class="input-field" type="text" required="required">
+                            <span class="input-heading">Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input class="input-field" type="password" required="required">
+                            <span class="input-heading">Password</span>
+                        </div>
+                        <div class="inputbox">
+                            <input class="input-field" type="number" required="required">
+                            <span class="input-heading">Phone Number</span>
+                        </div>
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                        &lt;div class="inputbox">
+                            &lt;input class="input-field" type="text" required="required">
+                            &lt;span class="input-heading">Name&lt;/span>
+                        &lt;/div>
+                        &lt;div class="inputbox">
+                            &lt;input class="input-field" type="password" required="required">
+                            &lt;span class="input-heading">Password&lt;/span>
+                        &lt;/div>
+                        &lt;div class="inputbox">
+                            &lt;input class="input-field" type="number" required="required">
+                            &lt;span class="input-heading">Phone Number&lt;/span>
+                        &lt;/div></pre>
+                    </div>
+                    <br>
+                    <div class="inputbox-valid">
+                        <label for="input-field-valid">Email</label>
+                        <input class="input-field-valid" type="email" required="required">
+                        <span class="valid-status">Status</span>
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                        &lt;div class="inputbox-valid">
+                            &lt;label for="input-field-valid">Email&lt;/label>
+                            &lt;input class="input-field-valid" type="email" required="required">
+                            &lt;span class="valid-status">Status&lt;/span>
+                        &lt;/div></pre>
+                    </div>
+                </div>
+
+                <!-- Modal Component -->
+
+                <div id="modal">
+                    <h1>Modal</h1>
+                    <button id="modalbutton" class="btn">Show Modal</button>
+                    <div class="modal-container">
+                        <div class="modal">
+                            <h2 class="modal-header">Modal Heading</h2>
+                            <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                voluptatem ipsum iste voluptatibus id suscipit odit, dolore, beatae quisquam deserunt
+                                quibusdam nobis asperiores quia sunt temporibus? Sapiente quae repellat</div>
+                            <button class="btn btn-primary modal-button">Close</button>
+                        </div>
+                    </div>
+                    <div class="copyElement">
+                        <div class="copybox">
+                            <button class="btncopy btn-text-primary">copy</button>
+                        </div>
+                        <pre class="codecopy">
+                    &lt;div class="modal-container">
+                        &lt;div class="modal">
+                            &lt;h2 class="modal-header">Modal Heading&lt;/h2>
+                            &lt;div class="modal-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                voluptatem ipsum iste voluptatibus id suscipit odit, dolore, beatae quisquam deserunt
+                                quibusdam nobis asperiores quia sunt temporibus? Sapiente quae repellat
+                            &lt;/div>
+                            &lt;button class="btn btn-primary modal-button">Close&lt;/button>
+                        &lt;div>
+                    &lt;/div></pre>
+                    </div>
+
+                    <!-- Navigation Component -->
+
+                    <div id="nav">
+                        <h1>Navigation</h1>
+                        <h4>Primary Navigation</h4>
+                        <nav class="nav-primary">
+                            <ul class="nav-box">
+                                <li class="navelem"><a href="#" class="navtext-primary">Home</a></li>
+                                <li class="navelem"><a href="#" class="navtext-primary">Service</a></li>
+                                <li class="navelem"><a href="#" class="navtext-primary">About</a></li>
+                                <li class="navelem"><a href="#" class="navtext-primary">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="copyElement">
+                            <div class="copybox">
+                                <button class="btncopy btn-text-primary">copy</button>
+                            </div>
+                            <pre class="codecopy">
+                        &lt;nav class="nav-primary">
+                            &lt;ul class="nav-box">
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-primary">Home&lt;/a>&lt;/li>
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-primary">Service&lt;/a>&lt;/li>
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-primary">About&lt;/a>&lt;/li>
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-primary">Contact Us&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/nav></pre>
+                        </div>
+                        <h4>Secondary Navigation</h4>
+                        <nav class="nav-secondary">
+                            <ul class="nav-box">
+                                <li class="navelem"><a href="#" class="navtext-secondary">Home</a></li>
+                                <li class="navelem"><a href="#" class="navtext-secondary">Service</a></li>
+                                <li class="navelem"><a href="#" class="navtext-secondary">About</a></li>
+                                <li class="navelem"><a href="#" class="navtext-secondary">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="copyElement">
+                            <div class="copybox">
+                                <button class="btncopy">copy</button>
+                            </div>
+                            <pre class="codecopy">
+                        &lt;nav class="nav-secondary">
+                            &lt;ul class="nav-box">
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-secondary">Home&lt;/a>&lt;/li>
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-secondary">Service&lt;/a>&lt;/li>
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-secondary">About&lt;/a>&lt;/li>
+                                &lt;li class="navelem">&lt;a href="#" class="navtext-secondary">Contact Us&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/nav></pre>
+                        </div>
+                    </div>
+
+                    <!-- Rating Component -->
+
+                    <div id="rating">
+                        <h1>Rating</h1>
+                        <div class="ratingbox">
+                            <img class="ratingimage"
+                                src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2502999/2018/4/14/11523696815233-Roadster-Men-Black--Green-Regular-Fit-Checked-Casual-Shirt-3931523696814969-1.jpg"
+                                alt="">
+                            <h4>Roadster</h4>
+                            <p>Slim Fit Casual Shirt</p>
+                            <div class="starating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="copyElement">
+                            <div class="copybox">
+                                <button class="btncopy btn-text-primary">copy</button>
+                            </div>
+                            <pre class="codecopy">
+                        &lt;div class="ratingbox">
+                            &lt;img class="ratingimage" src="..." alt="">
+                            &lt;h4>Roadster&lt;/h4>
+                            &lt;p>Slim Fit Casual Shirt&lt;/p>
+                            &lt;div class="starating">
+                                &lt;span class="fa fa-star checked">&lt;/span>
+                                &lt;span class="fa fa-star checked">&lt;/span>
+                                &lt;span class="fa fa-star checked">&lt;/span>
+                                &lt;span class="fa fa-star">&lt;/span>
+                                &lt;span class="fa fa-star">&lt;/span>
+                            &lt;/div>
+                        &lt;/div></pre>
+                        </div>
+
+                        <!-- Text Utilities Component -->
+
+                        <div id="textutil">
+                            <h1>Text Utilities</h1>
+                            <h3>Heading</h3>
+                            <p class="h1">Heading 1</p>
+                            <p class="h2">Heading 2</p>
+                            <p class="h3">Heading 3</p>
+                            <p class="h4">Heading 4</p>
+                            <p class="h5">Heading 5</p>
+                            <p class="h6">Heading 6</p>
+                            <h3>Text alignment</h3>
+                            <p class="left">Left</p>
+                            <p class="center">Center</p>
+                            <p class="right">Right</p>
+                            <div class="copyElement">
+                                <div class="copybox">
+                                    <button class="btncopy btn-text-primary">copy</button>
+                                </div>
+                                <pre class="codecopy">
+                        &lt;p class="h1">Heading 1&lt;/p>
+                        &lt;p class="h2">Heading 2&lt;/p>
+                        &lt;p class="h3">Heading 3&lt;/p>
+                        &lt;p class="h4">Heading 4&lt;/p>
+                        &lt;p class="h5">Heading 5&lt;/p>
+                        &lt;p class="h6">Heading 6&lt;/p>
+
+                        &lt;p class="left">Left&lt;/p>
+                        &lt;p class="center">Center&lt;/p>
+                        &lt;p class="right">Right&lt;/p></pre>
+                </div>
+
+                    <!-- Grid Component -->
+
+                    <div id="grid">
+                        <h1>Grid</h1>
+                        <h3>Grid with 2 columns</h3>
+                        <div class="grid-2">
+                        <article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            A error
+                            exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                            explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        </article>
+                        <article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            A error
+                            exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                            explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        </article>
+                        </div>
+                            <div class="copyElement">
+                                <div class="copybox">
+                                    <button class="btncopy btn-text-primary">copy</button>
+                                </div>
+                            <pre class="codecopy">
+                    &lt;div class="grid-2">
+                        &lt;article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A error
+                            exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                            explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        &lt;/article>
+                        &lt;article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A error
+                                exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                                explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        &lt;/article>
+                    &lt;/div></pre>
+                    <h3>Grid with 3 columns</h3>
+                    <div class="grid-3">
+                        <article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.A error
+                            exercitationem quis sed possimus nemo dicta praesentium facere aliquam
+                            sapiente
+                            explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        </article>
+                        <article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            A error
+                            exercitationem quis sed possimus nemo dicta praesentium facere aliquam
+                            sapiente
+                            explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        </article>
+                        <article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            A error
+                            exercitationem quis sed possimus nemo dicta praesentium facere aliquam
+                            sapiente
+                            explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                        </article>
+                        </div>
+                            <div class="copyElement">
+                                <div class="copybox">
+                                    <button class="btncopy btn-text-primary">copy</button>
+                                </div>
+                        <pre class="codecopy">
+                        &lt;div class="grid-3">
+                            &lt;article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A error
+                                exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                                explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                            &lt;/article>
+                            &lt;article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A error
+                                    exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                                    explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                            &lt;/article>
+                            &lt;article class="grid-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A error
+                                    exercitationem quis sed possimus nemo dicta praesentium facere aliquam sapiente
+                                    explicabo, fugit minus at magnam culpa totam nobis asperiores voluptates?
+                            &lt;/article>
+                        &lt;/div></pre>
+                                    </div>
+
+                    <!-- Toast Component -->
+
+                    <div id="toast">
+                        <h1>Toast</h1>
+                        <div class="toast-container">
+                            <div class="toast-heading">
+                                <h4>Toast Heading</h4>
+                                <div class="status-box">
+                                    <span class="toast-status">Just Now</span>
+                                    <button class="toast-close">X</button>
+                                </div>
+                            </div>
+                            <p class="toast-body">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                                Debitis ullam nihil eaque ad, ea obcaecati!</p>
+                        </div>
+                        <div class="copyElement">
+                            <div class="copybox">
+                                <button class="btncopy btn-text-primary">copy</button>
+                            </div>
+                    <pre class="codecopy">
+                    &lt;div class="toast-container">
+                        &lt;div class="toast-heading">
+                            &lt;h4>Toast Heading&lt;/h4>
+                            &lt;div class="status-box">
+                                &lt;span class="toast-status">Just Now&lt;/span>
+                                &lt;button class="toast-close">X&lt;/button>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;p class="toast-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Debitis ullam nihil eaque ad, ea obcaecati!
+                        &lt;/p>
+                    &lt;/div></pre>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="component.js"></script>
+
+</html>
