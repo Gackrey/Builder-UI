@@ -121,8 +121,9 @@ h1,h3{
         color: white;
         top: 3rem;
         z-index: 2;
-        width: 72vw;
-        left: -72vw;
+        width: 100vw;
+        height: 100vh;
+        left: -100vw;
     }
     .image-circle-small {
         width: 100px;

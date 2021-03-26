@@ -4,18 +4,27 @@ let firstcross = document.querySelector('.firstcross');
 let middledash = document.querySelector('.middledash');
 let lastcross = document.querySelector('.lastcross');
 let copybutton = document.getElementsByClassName('btncopy');
-
+let scrollToggle = true;
 burgerbox.addEventListener('click',()=>{
     firstcross.classList.toggle('rotatef');
     lastcross.classList.toggle('rotatel');
     middledash.classList.toggle('remove');
     content_section.classList.toggle('toggle');
+    if(scrollToggle){
+        document.querySelector('body').style.overflow = 'hidden';
+        scrollToggle = !scrollToggle;
+    }
+    else{
+        document.querySelector('body').style.overflow = 'initial';
+        scrollToggle = !scrollToggle;
+    }
 });
 content_section.addEventListener('mouseover',()=>{
     firstcross.classList.toggle('rotatef');
     lastcross.classList.toggle('rotatel');
     middledash.classList.toggle('remove');
     content_section.classList.toggle('toggle')
+    document.querySelector('body').style.overflow = 'initial';
 })
 Array.from(copybutton).forEach(element=> {
     element.addEventListener('click', ()=>{
