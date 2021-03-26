@@ -20,7 +20,7 @@
     padding: 10px 5px;
     border-radius: 7px;
     text-align: center;
-    margin: 10px 20px;
+    margin: 10px;
 }
 .alert-dismiss{
     display: flex;
@@ -424,6 +424,7 @@
 .nav-box{
     display: flex;
     width: fit-content;
+    flex-wrap: wrap;
     margin: auto;
 }
 .navelem{
@@ -512,7 +513,7 @@
                                         /* Toast */
 .toast-container{
     border: 1px solid black;
-    width: 400px;
+    width: 20rem;
 }
 .toast-heading{
     padding: 5px 10px;
