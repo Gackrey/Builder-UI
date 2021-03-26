@@ -18,7 +18,6 @@ body{
 .burgerbox{
     position: relative;
     display: none;
-    left: 84vw;
     top: 9px;
     background-color: transparent;
     height: 30px;
@@ -35,8 +34,9 @@ body{
     transition: 0.5s;
 }
 .logo{
-    width: 46px;
-    margin: 10px 70px;
+    width: 38px;
+    margin-left: 32px;
+    margin-top: 6px;
 }
 .container{
     display: grid;
@@ -109,7 +109,8 @@ h1,h3{
         grid-template-columns: 1fr 2fr;
     }
     .hamburgerHolder{
-        display: block;
+        display: flex;
+    justify-content: space-between;
     }
     p{
         text-align: center;
