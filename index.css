@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: aliceblue;
 }
@@ -6,9 +11,47 @@ h1,h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
 }
+h4{
+    display: inline;
+}
+header{
+    display: flex;
+    background-color: rgb(141 12 141);
+    justify-content: space-between;
+    height: 3rem;
+}
 p{
     text-align: center;
     font-size: 24px;
+}
+.logo{
+    width: 38px;
+    margin-left: 32px;
+}
+.logobody{
+    display: flex;
+    align-items: center;
+}
+.logoName{
+    font-size: 22px;
+    margin-left: 10px;
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+.version{
+    display: inline-block;
+    font-family: 'Righteous', cursive;
+}
+.versionbody{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+.color{
+    color: #2196f3;
+}
+.color:hover{
+    color:#45c5ff
 }
 .copyElement{
     width: 80%;
