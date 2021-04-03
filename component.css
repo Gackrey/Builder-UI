@@ -219,6 +219,7 @@
     margin: 20px;
     box-shadow: 0 0 6px 0px black;
     width: 300px;
+    height: fit-content;
 }
 .card-dismiss::before{
     content: "X";
