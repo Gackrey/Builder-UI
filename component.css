@@ -103,6 +103,18 @@
     left: -16px;
     top: -4px;
 }
+.avatar-text{
+    padding: 11px 18px;
+    border: 1px solid var(--primary);
+    background-color: black;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.avatar-text > span{
+    font-size: 24px;
+    color: yellow;
+}
                                                 /* Badge */
 .badge .icon{
     width: 30px;
