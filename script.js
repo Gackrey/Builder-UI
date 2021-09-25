@@ -30,7 +30,7 @@ Array.from(copybutton).forEach(element=> {
     element.addEventListener('click', ()=>{
         element.innerText = 'copied';
         element.disabled = true;
-        setInterval(() => {
+        setTimeout(() => {
             element.innerText = 'copy';
             element.disabled = false;
         }, 2000);
