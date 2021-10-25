@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Component Library</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logobody">
+        <img class="logo" src="./Images/icon.png" alt="" />
+        <span class="logoName">Builder UI</span>
+      </div>
+      <div class="versionbody">
+        <h3 class="version">v 0.1.0</h3>
+        <a href="https://github.com/Gackrey/Builder-UI">
+          <i class="fa fa-github-alt fa-lg color" aria-hidden="true"></i>
+        </a>
+      </div>
+    </header>
+    <h1>Welcome to Builder UI</h1>
+    <p>
+      Quickly design and customize responsive sites with Builder UI, the one
+      toolkit for all your components with Alerts, cards, responsive images,
+      text utilities and lot more.
+    </p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="./Builder UI.zip" download=""
+        >Download</a
+      >
+      <a class="btn btn-secondary" href="./documentation.html">Documentation</a>
+    </div>
+    <p>
+      To import the component library to make your awesome website more awesome
+      copy the below link and paste it in your HTML file.
+    </p>
+    <h3>CSS File</h3>
+    <div class="copyElement">
+      <div class="copybox">
+        <button class="btncopy btn-text-primary">copy</button>
+      </div>
+      <pre class="codecopy">
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://builder-ui.netlify.app/component.css&quot;&gt;</pre
+      >
+    </div>
+    <h3>JS File</h3>
+    <div class="copyElement">
+      <div class="copybox">
+        <button class="btncopy btn-text-primary">copy</button>
+      </div>
+      <pre class="codecopy">
+                    &lt;script src="https://builder-ui.netlify.app/component.js">&lt;/script></pre
+      >
+    </div>
+  </body>
+  <script>
+    Array.from(document.getElementsByClassName("btncopy")).forEach(
+      (element) => {
+        element.addEventListener("click", () => {
+          element.innerText = "copied";
+          element.disabled = true;
+          setTimeout(() => {
+            element.innerText = "copy";
+            element.disabled = false;
+          }, 2000);
+          let copied = element.parentElement.nextSibling.nextSibling;
+          var range = document.createRange();
+          range.selectNode(copied);
+          window.getSelection().removeAllRanges(); // clear current selection
+          window.getSelection().addRange(range); // to select text
+          document.execCommand("copy");
+          window.getSelection().removeAllRanges(); // to deselect
+        });
+      }
+    );
+  </script>
+</html>
